@@ -12,6 +12,9 @@ set :stage, :production
 # something that quacks like a hash can be used to set
 # extended properties on the server.
 
+role :app, %w{root@185.116.236.169}
+role :web, %w{root@185.116.236.169}
+
 server '185.116.236.169', user: 'root', roles: %w{web app}
 
 # you can set custom ssh options

@@ -41,7 +41,6 @@ GEM
     nokogiri (1.8.1)
       mini_portile2 (~> 2.3.0)
     public_suffix (3.0.1)
-    puma (3.11.0)
     rack (2.0.3)
     rack-protection (2.0.0)
       rack
@@ -61,6 +60,8 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.7.0)
     rspec-support (3.7.0)
+    rvm-capistrano (1.5.0)
+      capistrano (>= 2.15.4)
     sinatra (2.0.0)
       mustermann (~> 1.0)
       rack (~> 2.0)
@@ -81,8 +82,8 @@ DEPENDENCIES
   capistrano-bundler
   capistrano-rvm!
   capybara
-  puma
   rspec (= 3.7.0)
+  rvm-capistrano
   sinatra
 
 BUNDLED WITH
