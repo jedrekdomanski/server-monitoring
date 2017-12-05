@@ -11,7 +11,6 @@ class App < Sinatra::Base
   end
 
   post '/create' do
-    puts params
     stat = Stat.new(cpu: params[:cpu], disk: params[:disk], ram: params[:ram])
     Stats.save(stat)
   

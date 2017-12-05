@@ -1,7 +1,7 @@
 # config valid only for Capistrano 3.1
-lock '3.1.0'
+lock '3.10.0'
 
-set :application, 'server-,monitoring'
+set :application, 'server-monitoring'
 set :repo_url, 'git@bitbucket.org:jedrek_domanski/server-monitoring.git'
 
 # Default branch is :master
@@ -39,7 +39,7 @@ namespace :deploy do
   desc 'Restart application'
   task :restart do
     on roles(:app), in: :sequence, wait: 5 do
-      execute :touch, release_path.join('tmp/restart.txt')
+      execute :rackup, "-p 9210", "/www/server-monitoring/current"
     end
   end
 

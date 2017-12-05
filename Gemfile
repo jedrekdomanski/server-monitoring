@@ -4,8 +4,7 @@ gem 'sinatra'
 gem "puma"
 
 group :development do
-  gem 'capistrano'
-  gem 'capistrano3-puma'
+  gem 'capistrano', '~> 3.10'
   gem 'capistrano-bundler'
   gem 'capistrano-rvm', github: "capistrano/rvm"
 end
