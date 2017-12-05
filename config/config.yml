@@ -1,0 +1,5 @@
+## Set a metric to false to disable periodic checks
+
+cpu: :true
+disk: :true
+ram: :true
