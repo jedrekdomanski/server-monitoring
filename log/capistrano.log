@@ -318,3 +318,109 @@ Run `bundle install` first.
  DEBUG [f6eb13c1] 	* Daemonizing...
  DEBUG [f6eb13c1] 	
   INFO [f6eb13c1] Finished in 0.818 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-12-05 17:18:36 +0100 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [b10cb653] Running [ -d ~/.rvm ] as root@185.116.236.169
+ DEBUG [b10cb653] Command: [ -d ~/.rvm ]
+ DEBUG [b10cb653] Finished in 0.605 seconds with exit status 1 (failed).
+ DEBUG [47344d83] Running [ -d /usr/local/rvm ] as root@185.116.236.169
+ DEBUG [47344d83] Command: [ -d /usr/local/rvm ]
+ DEBUG [47344d83] Finished in 0.156 seconds with exit status 0 (successful).
+ DEBUG [5302fd87] Running /usr/local/rvm/bin/rvm version as root@185.116.236.169
+ DEBUG [5302fd87] Command: /usr/local/rvm/bin/rvm version
+ DEBUG [5302fd87] 	rvm 1.29.3 (master) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [5302fd87] Finished in 0.415 seconds with exit status 0 (successful).
+ DEBUG [33953860] Running /usr/local/rvm/bin/rvm current as root@185.116.236.169
+ DEBUG [33953860] Command: /usr/local/rvm/bin/rvm current
+ DEBUG [33953860] 	ruby-2.3.0
+ DEBUG [33953860] Finished in 0.349 seconds with exit status 0 (successful).
+ DEBUG [205baf98] Running /usr/local/rvm/bin/rvm default do ruby --version as root@185.116.236.169
+ DEBUG [205baf98] Command: /usr/local/rvm/bin/rvm default do ruby --version
+ DEBUG [205baf98] 	ruby 2.3.0p0 (2015-12-25 revision 53290) [x86_64-linux]
+ DEBUG [205baf98] Finished in 0.464 seconds with exit status 0 (successful).
+  INFO [90f4488b] Running /usr/bin/env mkdir -p /tmp as root@185.116.236.169
+ DEBUG [90f4488b] Command: /usr/bin/env mkdir -p /tmp
+  INFO [90f4488b] Finished in 0.159 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-server-monitoring-production-jedrek.sh 0.0%
+  INFO Uploading /tmp/git-ssh-server-monitoring-production-jedrek.sh 100.0%
+  INFO [5096da63] Running /usr/bin/env chmod 700 /tmp/git-ssh-server-monitoring-production-jedrek.sh as root@185.116.236.169
+ DEBUG [5096da63] Command: /usr/bin/env chmod 700 /tmp/git-ssh-server-monitoring-production-jedrek.sh
+  INFO [5096da63] Finished in 0.153 seconds with exit status 0 (successful).
+  INFO [fe3c8341] Running /usr/bin/env git ls-remote git@bitbucket.org:jedrek_domanski/server-monitoring.git HEAD as root@185.116.236.169
+ DEBUG [fe3c8341] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-server-monitoring-production-jedrek.sh" ; /usr/bin/env git ls-remote git@bitbucket.org:jedrek_domanski/server-monitoring.git HEAD )
+ DEBUG [fe3c8341] 	Warning: Permanently added the RSA host key for IP address '2401:1d80:1010::152' to the list of known hosts.
+ DEBUG [fe3c8341] 	87aa91f32d3ca1638df9459ef63b8111d26f3f3f	HEAD
+  INFO [fe3c8341] Finished in 1.541 seconds with exit status 0 (successful).
+  INFO [3fadee99] Running /usr/bin/env mkdir -p /root/www/server-monitoring/shared /root/www/server-monitoring/releases as root@185.116.236.169
+ DEBUG [3fadee99] Command: /usr/bin/env mkdir -p /root/www/server-monitoring/shared /root/www/server-monitoring/releases
+  INFO [3fadee99] Finished in 0.160 seconds with exit status 0 (successful).
+ DEBUG [5b4e50b8] Running [ -f /root/www/server-monitoring/current/REVISION ] as root@185.116.236.169
+ DEBUG [5b4e50b8] Command: [ -f /root/www/server-monitoring/current/REVISION ]
+ DEBUG [5b4e50b8] Finished in 0.151 seconds with exit status 0 (successful).
+ DEBUG [874dbf5e] Running /usr/bin/env cat /root/www/server-monitoring/current/REVISION 2>/dev/null as root@185.116.236.169
+ DEBUG [874dbf5e] Command: /usr/bin/env cat /root/www/server-monitoring/current/REVISION 2>/dev/null
+ DEBUG [874dbf5e] 	528fd0983ee483d35331e7112c7759ac62922e4d
+ DEBUG [874dbf5e] Finished in 0.151 seconds with exit status 0 (successful).
+ DEBUG [b5cf7b44] Running [ -f /root/www/server-monitoring/repo/HEAD ] as root@185.116.236.169
+ DEBUG [b5cf7b44] Command: [ -f /root/www/server-monitoring/repo/HEAD ]
+ DEBUG [b5cf7b44] Finished in 0.156 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /root/www/server-monitoring/repo
+ DEBUG [6d1b17a8] Running if test ! -d /root/www/server-monitoring/repo; then echo "Directory does not exist '/root/www/server-monitoring/repo'" 1>&2; false; fi as root@185.116.236.169
+ DEBUG [6d1b17a8] Command: if test ! -d /root/www/server-monitoring/repo; then echo "Directory does not exist '/root/www/server-monitoring/repo'" 1>&2; false; fi
+ DEBUG [6d1b17a8] Finished in 0.154 seconds with exit status 0 (successful).
+  INFO [53aaae76] Running /usr/bin/env git remote set-url origin git@bitbucket.org:jedrek_domanski/server-monitoring.git as root@185.116.236.169
+ DEBUG [53aaae76] Command: cd /root/www/server-monitoring/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-server-monitoring-production-jedrek.sh" ; /usr/bin/env git remote set-url origin git@bitbucket.org:jedrek_domanski/server-monitoring.git )
+  INFO [53aaae76] Finished in 0.155 seconds with exit status 0 (successful).
+  INFO [40c1c4d5] Running /usr/bin/env git remote update --prune as root@185.116.236.169
+ DEBUG [40c1c4d5] Command: cd /root/www/server-monitoring/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-server-monitoring-production-jedrek.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [40c1c4d5] 	Fetching origin
+ DEBUG [40c1c4d5] 	From bitbucket.org:jedrek_domanski/server-monitoring
+   528fd09..87aa91f  master     -> master
+  INFO [40c1c4d5] Finished in 1.685 seconds with exit status 0 (successful).
+ DEBUG [4db332ee] Running if test ! -d /root/www/server-monitoring/repo; then echo "Directory does not exist '/root/www/server-monitoring/repo'" 1>&2; false; fi as root@185.116.236.169
+ DEBUG [4db332ee] Command: if test ! -d /root/www/server-monitoring/repo; then echo "Directory does not exist '/root/www/server-monitoring/repo'" 1>&2; false; fi
+ DEBUG [4db332ee] Finished in 0.155 seconds with exit status 0 (successful).
+  INFO [fb52f893] Running /usr/bin/env mkdir -p /root/www/server-monitoring/releases/20171205161841 as root@185.116.236.169
+ DEBUG [fb52f893] Command: cd /root/www/server-monitoring/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-server-monitoring-production-jedrek.sh" ; /usr/bin/env mkdir -p /root/www/server-monitoring/releases/20171205161841 )
+  INFO [fb52f893] Finished in 0.154 seconds with exit status 0 (successful).
+  INFO [a1ecfcda] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /root/www/server-monitoring/releases/20171205161841 as root@185.116.236.169
+ DEBUG [a1ecfcda] Command: cd /root/www/server-monitoring/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-server-monitoring-production-jedrek.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /root/www/server-monitoring/releases/20171205161841 )
+  INFO [a1ecfcda] Finished in 0.153 seconds with exit status 0 (successful).
+ DEBUG [1dfedf31] Running if test ! -d /root/www/server-monitoring/repo; then echo "Directory does not exist '/root/www/server-monitoring/repo'" 1>&2; false; fi as root@185.116.236.169
+ DEBUG [1dfedf31] Command: if test ! -d /root/www/server-monitoring/repo; then echo "Directory does not exist '/root/www/server-monitoring/repo'" 1>&2; false; fi
+ DEBUG [1dfedf31] Finished in 0.155 seconds with exit status 0 (successful).
+ DEBUG [d99c5dda] Running /usr/bin/env git rev-list --max-count=1 master as root@185.116.236.169
+ DEBUG [d99c5dda] Command: cd /root/www/server-monitoring/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-server-monitoring-production-jedrek.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [d99c5dda] 	87aa91f32d3ca1638df9459ef63b8111d26f3f3f
+ DEBUG [d99c5dda] Finished in 0.154 seconds with exit status 0 (successful).
+ DEBUG [bfbb9e97] Running if test ! -d /root/www/server-monitoring/releases/20171205161841; then echo "Directory does not exist '/root/www/server-monitoring/releases/20171205161841'" 1>&2; false; fi as root@185.116.236.169
+ DEBUG [bfbb9e97] Command: if test ! -d /root/www/server-monitoring/releases/20171205161841; then echo "Directory does not exist '/root/www/server-monitoring/releases/20171205161841'" 1>&2; false; fi
+ DEBUG [bfbb9e97] Finished in 0.146 seconds with exit status 0 (successful).
+  INFO [3a17c194] Running /usr/bin/env echo "87aa91f32d3ca1638df9459ef63b8111d26f3f3f" >> REVISION as root@185.116.236.169
+ DEBUG [3a17c194] Command: cd /root/www/server-monitoring/releases/20171205161841 && /usr/bin/env echo "87aa91f32d3ca1638df9459ef63b8111d26f3f3f" >> REVISION
+  INFO [3a17c194] Finished in 0.163 seconds with exit status 0 (successful).
+ DEBUG [9a224c90] Running if test ! -d /root/www/server-monitoring/releases/20171205161841; then echo "Directory does not exist '/root/www/server-monitoring/releases/20171205161841'" 1>&2; false; fi as root@185.116.236.169
+ DEBUG [9a224c90] Command: if test ! -d /root/www/server-monitoring/releases/20171205161841; then echo "Directory does not exist '/root/www/server-monitoring/releases/20171205161841'" 1>&2; false; fi
+ DEBUG [9a224c90] Finished in 0.150 seconds with exit status 0 (successful).
+ DEBUG [08221ed0] Running /usr/local/rvm/bin/rvm default do bundle check --path /root/www/server-monitoring/shared/bundle as root@185.116.236.169
+ DEBUG [08221ed0] Command: cd /root/www/server-monitoring/releases/20171205161841 && /usr/local/rvm/bin/rvm default do bundle check --path /root/www/server-monitoring/shared/bundle
+ DEBUG [08221ed0] 	The git source `git://github.com/capistrano/rvm.git` uses the `git` protocol, which transmits data without encryption. Disable this warning with `bundle config git.allow_insecure true`, or switch to the `https` protocol to keep your data secure.
+ DEBUG [08221ed0] 	git://github.com/capistrano/rvm.git (at master@9cfef39) is not yet checked out.
+Run `bundle install` first.
+ DEBUG [08221ed0] Finished in 0.766 seconds with exit status 11 (failed).
+  INFO [1a10f2a9] Running /usr/local/rvm/bin/rvm default do bundle install --path /root/www/server-monitoring/shared/bundle --without development test --deployment --quiet as root@185.116.236.169
+ DEBUG [1a10f2a9] Command: cd /root/www/server-monitoring/releases/20171205161841 && /usr/local/rvm/bin/rvm default do bundle install --path /root/www/server-monitoring/shared/bundle --without development test --deployment --quiet
+  INFO [1a10f2a9] Finished in 1.448 seconds with exit status 0 (successful).
+  INFO [16422275] Running /usr/bin/env ln -s /root/www/server-monitoring/releases/20171205161841 /root/www/server-monitoring/releases/current as root@185.116.236.169
+ DEBUG [16422275] Command: /usr/bin/env ln -s /root/www/server-monitoring/releases/20171205161841 /root/www/server-monitoring/releases/current
+  INFO [16422275] Finished in 0.162 seconds with exit status 0 (successful).
+  INFO [edfbea72] Running /usr/bin/env mv /root/www/server-monitoring/releases/current /root/www/server-monitoring as root@185.116.236.169
+ DEBUG [edfbea72] Command: /usr/bin/env mv /root/www/server-monitoring/releases/current /root/www/server-monitoring
+  INFO [edfbea72] Finished in 0.156 seconds with exit status 0 (successful).
+  INFO [df8a645a] Running /usr/bin/env rackup -p 9210 /www/server-monitoring/current as root@185.116.236.169
+ DEBUG [df8a645a] Command: /usr/bin/env rackup -p 9210 /www/server-monitoring/current
+ DEBUG [df8a645a] 	/usr/bin/env: 
+ DEBUG [df8a645a] 	rackup
+ DEBUG [df8a645a] 	: No such file or directory
+ DEBUG [df8a645a] 	

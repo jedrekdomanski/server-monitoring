@@ -33,13 +33,12 @@ set :deploy_to, '/root/www/server-monitoring'
 
 # Default value for keep_releases is 5
 # set :keep_releases, 5
-
 namespace :deploy do
 
   desc 'Restart application'
   task :restart do
     on roles(:app), in: :sequence, wait: 5 do
-      execute :rackup, "-p 9210", "/www/server-monitoring/current"
+      run "cd /www/server-monitoring/current && rackup-p 9210"
     end
   end
 
