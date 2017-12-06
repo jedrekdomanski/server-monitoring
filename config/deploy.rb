@@ -19,6 +19,8 @@ namespace :deploy do
     on roles(:web, :app) do
       within '/root/www/server-monitoring/current' do
         execute :bundle, "exec rackup -p 9210 &"
+        # restart system service mydeamon.service
+        # execute: systemctl, "restart mydeamon"
       end
     end
   end
