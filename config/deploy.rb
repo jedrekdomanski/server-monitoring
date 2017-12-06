@@ -1,5 +1,5 @@
 # config valid only for Capistrano 3.1
-require 'rvm/capistrano'
+
 lock '3.10.0'
 
 set :application, 'server-monitoring'
@@ -17,11 +17,9 @@ namespace :deploy do
   desc 'Start application'
   task :start do
     on roles(:web, :app) do
-      execute "cd /root/www/server-monitoring/current/ && rackup -p 9210"
+      within '/root/www/server-monitoring/current' do
+        execute :bundle, "exec rackup -p 9210 &"
+      end
     end
   end
-
-  after :publishing, :restart
-  after :finishing, 'deploy:cleanup'
-
 end

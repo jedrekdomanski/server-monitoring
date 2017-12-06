@@ -2546,3 +2546,298 @@ Run `bundle install` first.
   INFO [007efc75] Running cd /root/www/server-monitoring/current/ && rackup -p 9210 as root@185.116.236.169
  DEBUG [007efc75] Command: cd /root/www/server-monitoring/current/ && rackup -p 9210
  DEBUG [007efc75] 	bash: rackup: command not found
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-12-05 20:48:22 +0100 cap production deploy:start
+  INFO ---------------------------------------------------------------------------
+ DEBUG [e7c75668] Running [ -d ~/.rvm ] as root@185.116.236.169
+ DEBUG [e7c75668] Command: [ -d ~/.rvm ]
+ DEBUG [e7c75668] Finished in 0.480 seconds with exit status 1 (failed).
+ DEBUG [a803acf0] Running [ -d /usr/local/rvm ] as root@185.116.236.169
+ DEBUG [a803acf0] Command: [ -d /usr/local/rvm ]
+ DEBUG [a803acf0] Finished in 0.150 seconds with exit status 0 (successful).
+ DEBUG [88df5e84] Running /usr/local/rvm/bin/rvm version as root@185.116.236.169
+ DEBUG [88df5e84] Command: /usr/local/rvm/bin/rvm version
+ DEBUG [88df5e84] 	rvm 1.29.3 (master) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [88df5e84] Finished in 0.341 seconds with exit status 0 (successful).
+ DEBUG [410e1b30] Running /usr/local/rvm/bin/rvm current as root@185.116.236.169
+ DEBUG [410e1b30] Command: /usr/local/rvm/bin/rvm current
+ DEBUG [410e1b30] 	ruby-2.3.0
+ DEBUG [410e1b30] Finished in 0.437 seconds with exit status 0 (successful).
+ DEBUG [0f7690db] Running /usr/local/rvm/bin/rvm default do ruby --version as root@185.116.236.169
+ DEBUG [0f7690db] Command: /usr/local/rvm/bin/rvm default do ruby --version
+ DEBUG [0f7690db] 	ruby 2.3.0p0 (2015-12-25 revision 53290) [x86_64-linux]
+ DEBUG [0f7690db] Finished in 0.519 seconds with exit status 0 (successful).
+  INFO [a3a73035] Running cd /root/www/server-monitoring/current/ && rackup -p 9210 as root@185.116.236.169
+ DEBUG [a3a73035] Command: cd /root/www/server-monitoring/current/ && rackup -p 9210
+ DEBUG [a3a73035] 	bash: rackup: command not found
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-12-05 20:48:53 +0100 cap production shell
+  INFO ---------------------------------------------------------------------------
+ DEBUG [166ad34d] Running [ -d ~/.rvm ] as root@185.116.236.169
+ DEBUG [166ad34d] Command: [ -d ~/.rvm ]
+ DEBUG [166ad34d] Finished in 0.533 seconds with exit status 1 (failed).
+ DEBUG [2d4e47d2] Running [ -d /usr/local/rvm ] as root@185.116.236.169
+ DEBUG [2d4e47d2] Command: [ -d /usr/local/rvm ]
+ DEBUG [2d4e47d2] Finished in 0.158 seconds with exit status 0 (successful).
+ DEBUG [27075165] Running /usr/local/rvm/bin/rvm version as root@185.116.236.169
+ DEBUG [27075165] Command: /usr/local/rvm/bin/rvm version
+ DEBUG [27075165] 	rvm 1.29.3 (master) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [27075165] Finished in 0.405 seconds with exit status 0 (successful).
+ DEBUG [a85d8abb] Running /usr/local/rvm/bin/rvm current as root@185.116.236.169
+ DEBUG [a85d8abb] Command: /usr/local/rvm/bin/rvm current
+ DEBUG [a85d8abb] 	ruby-2.3.0
+ DEBUG [a85d8abb] Finished in 0.331 seconds with exit status 0 (successful).
+ DEBUG [56320c8a] Running /usr/local/rvm/bin/rvm default do ruby --version as root@185.116.236.169
+ DEBUG [56320c8a] Command: /usr/local/rvm/bin/rvm default do ruby --version
+ DEBUG [56320c8a] 	ruby 2.3.0p0 (2015-12-25 revision 53290) [x86_64-linux]
+ DEBUG [56320c8a] Finished in 0.477 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-12-05 20:49:48 +0100 cap production shell
+  INFO ---------------------------------------------------------------------------
+ DEBUG [c7f05471] Running [ -d ~/.rvm ] as root@185.116.236.169
+ DEBUG [c7f05471] Command: [ -d ~/.rvm ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-12-05 20:49:51 +0100 cap production deploy:start
+  INFO ---------------------------------------------------------------------------
+ DEBUG [87932aa5] Running [ -d ~/.rvm ] as root@185.116.236.169
+ DEBUG [87932aa5] Command: [ -d ~/.rvm ]
+ DEBUG [87932aa5] Finished in 0.515 seconds with exit status 1 (failed).
+ DEBUG [7e7999c7] Running [ -d /usr/local/rvm ] as root@185.116.236.169
+ DEBUG [7e7999c7] Command: [ -d /usr/local/rvm ]
+ DEBUG [7e7999c7] Finished in 0.153 seconds with exit status 0 (successful).
+ DEBUG [cee345fd] Running /usr/local/rvm/bin/rvm version as root@185.116.236.169
+ DEBUG [cee345fd] Command: /usr/local/rvm/bin/rvm version
+ DEBUG [cee345fd] 	rvm 1.29.3 (master) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [cee345fd] Finished in 0.368 seconds with exit status 0 (successful).
+ DEBUG [c72b4806] Running /usr/local/rvm/bin/rvm current as root@185.116.236.169
+ DEBUG [c72b4806] Command: /usr/local/rvm/bin/rvm current
+ DEBUG [c72b4806] 	ruby-2.3.0
+ DEBUG [c72b4806] Finished in 0.333 seconds with exit status 0 (successful).
+ DEBUG [d725c960] Running /usr/local/rvm/bin/rvm default do ruby --version as root@185.116.236.169
+ DEBUG [d725c960] Command: /usr/local/rvm/bin/rvm default do ruby --version
+ DEBUG [d725c960] 	ruby 2.3.0p0 (2015-12-25 revision 53290) [x86_64-linux]
+ DEBUG [d725c960] Finished in 0.508 seconds with exit status 0 (successful).
+  INFO [0205b776] Running cd /root/www/server-monitoring/current/ && rackup -p 9210 as root@185.116.236.169
+ DEBUG [0205b776] Command: cd /root/www/server-monitoring/current/ && rackup -p 9210
+ DEBUG [0205b776] 	bash: rackup: command not found
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-12-05 20:51:54 +0100 cap production rvm:check
+  INFO ---------------------------------------------------------------------------
+ DEBUG [939f307e] Running [ -d ~/.rvm ] as root@185.116.236.169
+ DEBUG [939f307e] Command: [ -d ~/.rvm ]
+ DEBUG [939f307e] Finished in 0.506 seconds with exit status 1 (failed).
+ DEBUG [fcd33ae4] Running [ -d /usr/local/rvm ] as root@185.116.236.169
+ DEBUG [fcd33ae4] Command: [ -d /usr/local/rvm ]
+ DEBUG [fcd33ae4] Finished in 0.161 seconds with exit status 0 (successful).
+ DEBUG [6148d951] Running /usr/local/rvm/bin/rvm version as root@185.116.236.169
+ DEBUG [6148d951] Command: /usr/local/rvm/bin/rvm version
+ DEBUG [6148d951] 	rvm 1.29.3 (master) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [6148d951] Finished in 0.360 seconds with exit status 0 (successful).
+ DEBUG [1a557d9d] Running /usr/local/rvm/bin/rvm current as root@185.116.236.169
+ DEBUG [1a557d9d] Command: /usr/local/rvm/bin/rvm current
+ DEBUG [1a557d9d] 	ruby-2.3.0
+ DEBUG [1a557d9d] Finished in 0.329 seconds with exit status 0 (successful).
+ DEBUG [dfa54f7e] Running /usr/local/rvm/bin/rvm default do ruby --version as root@185.116.236.169
+ DEBUG [dfa54f7e] Command: /usr/local/rvm/bin/rvm default do ruby --version
+ DEBUG [dfa54f7e] 	ruby 2.3.0p0 (2015-12-25 revision 53290) [x86_64-linux]
+ DEBUG [dfa54f7e] Finished in 0.523 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-12-06 12:45:50 +0100 cap production deploy:start
+  INFO ---------------------------------------------------------------------------
+ DEBUG [9b3d534f] Running [ -d ~/.rvm ] as root@185.116.236.169
+ DEBUG [9b3d534f] Command: [ -d ~/.rvm ]
+ DEBUG [9b3d534f] Finished in 0.653 seconds with exit status 1 (failed).
+ DEBUG [9e7c590c] Running [ -d /usr/local/rvm ] as root@185.116.236.169
+ DEBUG [9e7c590c] Command: [ -d /usr/local/rvm ]
+ DEBUG [9e7c590c] Finished in 0.147 seconds with exit status 0 (successful).
+ DEBUG [cc6c4641] Running /usr/local/rvm/bin/rvm version as root@185.116.236.169
+ DEBUG [cc6c4641] Command: /usr/local/rvm/bin/rvm version
+ DEBUG [cc6c4641] 	rvm 1.29.3 (master) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [cc6c4641] Finished in 0.382 seconds with exit status 0 (successful).
+ DEBUG [de7fcf05] Running /usr/local/rvm/bin/rvm current as root@185.116.236.169
+ DEBUG [de7fcf05] Command: /usr/local/rvm/bin/rvm current
+ DEBUG [de7fcf05] 	ruby-2.3.0
+ DEBUG [de7fcf05] Finished in 0.344 seconds with exit status 0 (successful).
+ DEBUG [d01b14bc] Running /usr/local/rvm/bin/rvm default do ruby --version as root@185.116.236.169
+ DEBUG [d01b14bc] Command: /usr/local/rvm/bin/rvm default do ruby --version
+ DEBUG [d01b14bc] 	ruby 2.3.0p0 (2015-12-25 revision 53290) [x86_64-linux]
+ DEBUG [d01b14bc] Finished in 0.508 seconds with exit status 0 (successful).
+  INFO [5afacb9a] Running cd /root/www/server-monitoring/current/ && rackup -p 9210 as root@185.116.236.169
+ DEBUG [5afacb9a] Command: cd /root/www/server-monitoring/current/ && rackup -p 9210
+ DEBUG [5afacb9a] 	bash: rackup: command not found
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-12-06 12:46:48 +0100 cap production deploy:start
+  INFO ---------------------------------------------------------------------------
+ DEBUG [7723fa1c] Running [ -d ~/.rvm ] as root@185.116.236.169
+ DEBUG [7723fa1c] Command: [ -d ~/.rvm ]
+ DEBUG [7723fa1c] Finished in 0.485 seconds with exit status 1 (failed).
+ DEBUG [e75d52c3] Running [ -d /usr/local/rvm ] as root@185.116.236.169
+ DEBUG [e75d52c3] Command: [ -d /usr/local/rvm ]
+ DEBUG [e75d52c3] Finished in 0.154 seconds with exit status 0 (successful).
+ DEBUG [1373ecde] Running /usr/local/rvm/bin/rvm version as root@185.116.236.169
+ DEBUG [1373ecde] Command: /usr/local/rvm/bin/rvm version
+ DEBUG [1373ecde] 	rvm 1.29.3 (master) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [1373ecde] Finished in 0.442 seconds with exit status 0 (successful).
+ DEBUG [903e5f4d] Running /usr/local/rvm/bin/rvm current as root@185.116.236.169
+ DEBUG [903e5f4d] Command: /usr/local/rvm/bin/rvm current
+ DEBUG [903e5f4d] 	ruby-2.3.0
+ DEBUG [903e5f4d] Finished in 0.417 seconds with exit status 0 (successful).
+ DEBUG [1451c02d] Running /usr/local/rvm/bin/rvm default do ruby --version as root@185.116.236.169
+ DEBUG [1451c02d] Command: /usr/local/rvm/bin/rvm default do ruby --version
+ DEBUG [1451c02d] 	ruby 2.3.0p0 (2015-12-25 revision 53290) [x86_64-linux]
+ DEBUG [1451c02d] Finished in 0.485 seconds with exit status 0 (successful).
+  INFO [17f322aa] Running cd /root/www/server-monitoring/current/ && rackup -p 9210 as root@185.116.236.169
+ DEBUG [17f322aa] Command: cd /root/www/server-monitoring/current/ && rackup -p 9210
+ DEBUG [17f322aa] 	bash: rackup: command not found
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-12-06 13:11:20 +0100 cap production deploy:start
+  INFO ---------------------------------------------------------------------------
+ DEBUG [ffc07a9f] Running [ -d ~/.rvm ] as root@185.116.236.169
+ DEBUG [ffc07a9f] Command: [ -d ~/.rvm ]
+ DEBUG [ffc07a9f] Finished in 0.529 seconds with exit status 1 (failed).
+ DEBUG [fc0bd565] Running [ -d /usr/local/rvm ] as root@185.116.236.169
+ DEBUG [fc0bd565] Command: [ -d /usr/local/rvm ]
+ DEBUG [fc0bd565] Finished in 0.151 seconds with exit status 0 (successful).
+ DEBUG [50664cda] Running /usr/local/rvm/bin/rvm version as root@185.116.236.169
+ DEBUG [50664cda] Command: /usr/local/rvm/bin/rvm version
+ DEBUG [50664cda] 	rvm 1.29.3 (master) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [50664cda] Finished in 0.391 seconds with exit status 0 (successful).
+ DEBUG [1da12c11] Running /usr/local/rvm/bin/rvm current as root@185.116.236.169
+ DEBUG [1da12c11] Command: /usr/local/rvm/bin/rvm current
+ DEBUG [1da12c11] 	ruby-2.3.0
+ DEBUG [1da12c11] Finished in 0.342 seconds with exit status 0 (successful).
+ DEBUG [47368d6c] Running /usr/local/rvm/bin/rvm default do ruby --version as root@185.116.236.169
+ DEBUG [47368d6c] Command: /usr/local/rvm/bin/rvm default do ruby --version
+ DEBUG [47368d6c] 	ruby 2.3.0p0 (2015-12-25 revision 53290) [x86_64-linux]
+ DEBUG [47368d6c] Finished in 0.493 seconds with exit status 0 (successful).
+  INFO [0c90c633] Running cd /root/www/server-monitoring/current/ && rackup1.3 -p 9210 as root@185.116.236.169
+ DEBUG [0c90c633] Command: cd /root/www/server-monitoring/current/ && rackup1.3 -p 9210
+ DEBUG [0c90c633] 	bash: rackup1.3: command not found
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-12-06 14:59:27 +0100 cap production deploy:start
+  INFO ---------------------------------------------------------------------------
+ DEBUG [d3bc6e59] Running [ -d ~/.rvm ] as root@185.116.236.169
+ DEBUG [d3bc6e59] Command: [ -d ~/.rvm ]
+ DEBUG [d3bc6e59] Finished in 0.482 seconds with exit status 1 (failed).
+ DEBUG [a8dc8419] Running [ -d /usr/local/rvm ] as root@185.116.236.169
+ DEBUG [a8dc8419] Command: [ -d /usr/local/rvm ]
+ DEBUG [a8dc8419] Finished in 0.145 seconds with exit status 0 (successful).
+ DEBUG [3044552c] Running /usr/local/rvm/bin/rvm version as root@185.116.236.169
+ DEBUG [3044552c] Command: /usr/local/rvm/bin/rvm version
+ DEBUG [3044552c] 	rvm 1.29.3 (master) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [3044552c] Finished in 0.427 seconds with exit status 0 (successful).
+ DEBUG [79e08460] Running /usr/local/rvm/bin/rvm current as root@185.116.236.169
+ DEBUG [79e08460] Command: /usr/local/rvm/bin/rvm current
+ DEBUG [79e08460] 	ruby-2.3.0
+ DEBUG [79e08460] Finished in 0.386 seconds with exit status 0 (successful).
+ DEBUG [cc616e5e] Running /usr/local/rvm/bin/rvm default do ruby --version as root@185.116.236.169
+ DEBUG [cc616e5e] Command: /usr/local/rvm/bin/rvm default do ruby --version
+ DEBUG [cc616e5e] 	ruby 2.3.0p0 (2015-12-25 revision 53290) [x86_64-linux]
+ DEBUG [cc616e5e] Finished in 0.501 seconds with exit status 0 (successful).
+  INFO [186d8774] Running cd /root/www/server-monitoring/current/ && /usr/local/rvm/gems/ruby-2.3.0/bin/rackup -p 9210 as root@185.116.236.169
+ DEBUG [186d8774] Command: cd /root/www/server-monitoring/current/ && /usr/local/rvm/gems/ruby-2.3.0/bin/rackup -p 9210
+ DEBUG [186d8774] 	/usr/bin/env: 
+ DEBUG [186d8774] 	ruby_executable_hooks
+ DEBUG [186d8774] 	: No such file or directory
+ DEBUG [186d8774] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-12-06 17:33:42 +0100 cap production deploy:start
+  INFO ---------------------------------------------------------------------------
+ DEBUG [80bf4d80] Running [ -d ~/.rvm ] as root@185.116.236.169
+ DEBUG [80bf4d80] Command: [ -d ~/.rvm ]
+ DEBUG [80bf4d80] Finished in 0.817 seconds with exit status 1 (failed).
+ DEBUG [f981ab4f] Running [ -d /usr/local/rvm ] as root@185.116.236.169
+ DEBUG [f981ab4f] Command: [ -d /usr/local/rvm ]
+ DEBUG [f981ab4f] Finished in 0.157 seconds with exit status 0 (successful).
+ DEBUG [85607124] Running /usr/local/rvm/bin/rvm version as root@185.116.236.169
+ DEBUG [85607124] Command: /usr/local/rvm/bin/rvm version
+ DEBUG [85607124] 	rvm 1.29.3 (master) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [85607124] Finished in 0.368 seconds with exit status 0 (successful).
+ DEBUG [22ad2116] Running /usr/local/rvm/bin/rvm current as root@185.116.236.169
+ DEBUG [22ad2116] Command: /usr/local/rvm/bin/rvm current
+ DEBUG [22ad2116] 	ruby-2.3.0
+ DEBUG [22ad2116] Finished in 0.332 seconds with exit status 0 (successful).
+ DEBUG [103aa1a2] Running /usr/local/rvm/bin/rvm default do ruby --version as root@185.116.236.169
+ DEBUG [103aa1a2] Command: /usr/local/rvm/bin/rvm default do ruby --version
+ DEBUG [103aa1a2] 	ruby 2.3.0p0 (2015-12-25 revision 53290) [x86_64-linux]
+ DEBUG [103aa1a2] Finished in 0.470 seconds with exit status 0 (successful).
+ DEBUG [ff349a72] Running if test ! -d /my/app/folder/; then echo "Directory does not exist '/my/app/folder/'" 1>&2; false; fi as root@185.116.236.169
+ DEBUG [ff349a72] Command: if test ! -d /my/app/folder/; then echo "Directory does not exist '/my/app/folder/'" 1>&2; false; fi
+ DEBUG [ff349a72] 	Directory does not exist '/my/app/folder/'
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-12-06 17:34:35 +0100 cap production deploy:start
+  INFO ---------------------------------------------------------------------------
+ DEBUG [a154ec0f] Running [ -d ~/.rvm ] as root@185.116.236.169
+ DEBUG [a154ec0f] Command: [ -d ~/.rvm ]
+ DEBUG [a154ec0f] Finished in 0.668 seconds with exit status 1 (failed).
+ DEBUG [adca60de] Running [ -d /usr/local/rvm ] as root@185.116.236.169
+ DEBUG [adca60de] Command: [ -d /usr/local/rvm ]
+ DEBUG [adca60de] Finished in 0.146 seconds with exit status 0 (successful).
+ DEBUG [7e70409f] Running /usr/local/rvm/bin/rvm version as root@185.116.236.169
+ DEBUG [7e70409f] Command: /usr/local/rvm/bin/rvm version
+ DEBUG [7e70409f] 	rvm 1.29.3 (master) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [7e70409f] Finished in 0.352 seconds with exit status 0 (successful).
+ DEBUG [694d8347] Running /usr/local/rvm/bin/rvm current as root@185.116.236.169
+ DEBUG [694d8347] Command: /usr/local/rvm/bin/rvm current
+ DEBUG [694d8347] 	ruby-2.3.0
+ DEBUG [694d8347] Finished in 0.421 seconds with exit status 0 (successful).
+ DEBUG [5cf97842] Running /usr/local/rvm/bin/rvm default do ruby --version as root@185.116.236.169
+ DEBUG [5cf97842] Command: /usr/local/rvm/bin/rvm default do ruby --version
+ DEBUG [5cf97842] 	ruby 2.3.0p0 (2015-12-25 revision 53290) [x86_64-linux]
+ DEBUG [5cf97842] Finished in 0.628 seconds with exit status 0 (successful).
+ DEBUG [df7c9378] Running if test ! -d /root/www/server-monitoring/current; then echo "Directory does not exist '/root/www/server-monitoring/current'" 1>&2; false; fi as root@185.116.236.169
+ DEBUG [df7c9378] Command: if test ! -d /root/www/server-monitoring/current; then echo "Directory does not exist '/root/www/server-monitoring/current'" 1>&2; false; fi
+ DEBUG [df7c9378] Finished in 0.148 seconds with exit status 0 (successful).
+  INFO [4dc4fa44] Running /usr/local/rvm/bin/rvm default do bundle exec rackup -p 9210 as root@185.116.236.169
+ DEBUG [4dc4fa44] Command: cd /root/www/server-monitoring/current && /usr/local/rvm/bin/rvm default do bundle exec rackup -p 9210
+ DEBUG [4dc4fa44] 	Puma starting in single mode...
+ DEBUG [4dc4fa44] 	
+ DEBUG [4dc4fa44] 	* Version 3.11.0 (ruby 2.3.0-p0), codename: Love Song
+ DEBUG [4dc4fa44] 	
+ DEBUG [4dc4fa44] 	* Min threads: 0, max threads: 16
+ DEBUG [4dc4fa44] 	
+ DEBUG [4dc4fa44] 	* Environment: development
+ DEBUG [4dc4fa44] 	
+ DEBUG [4dc4fa44] 	* Listening on tcp://localhost:9210
+ DEBUG [4dc4fa44] 	
+ DEBUG [4dc4fa44] 	Use Ctrl-C to stop
+ DEBUG [4dc4fa44] 	
+ DEBUG [4dc4fa44] 	::1 - - [06/Dec/2017:16:34:53 +0000] "GET /status HTTP/1.1" 200 12 0.0177
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-12-06 17:37:58 +0100 cap production deploy:start
+  INFO ---------------------------------------------------------------------------
+ DEBUG [73edf0d2] Running [ -d ~/.rvm ] as root@185.116.236.169
+ DEBUG [73edf0d2] Command: [ -d ~/.rvm ]
+ DEBUG [73edf0d2] Finished in 0.674 seconds with exit status 1 (failed).
+ DEBUG [afd631d7] Running [ -d /usr/local/rvm ] as root@185.116.236.169
+ DEBUG [afd631d7] Command: [ -d /usr/local/rvm ]
+ DEBUG [afd631d7] Finished in 0.146 seconds with exit status 0 (successful).
+ DEBUG [0c411428] Running /usr/local/rvm/bin/rvm version as root@185.116.236.169
+ DEBUG [0c411428] Command: /usr/local/rvm/bin/rvm version
+ DEBUG [0c411428] 	rvm 1.29.3 (master) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [0c411428] Finished in 0.410 seconds with exit status 0 (successful).
+ DEBUG [7592e798] Running /usr/local/rvm/bin/rvm current as root@185.116.236.169
+ DEBUG [7592e798] Command: /usr/local/rvm/bin/rvm current
+ DEBUG [7592e798] 	ruby-2.3.0
+ DEBUG [7592e798] Finished in 0.443 seconds with exit status 0 (successful).
+ DEBUG [40df1c8c] Running /usr/local/rvm/bin/rvm default do ruby --version as root@185.116.236.169
+ DEBUG [40df1c8c] Command: /usr/local/rvm/bin/rvm default do ruby --version
+ DEBUG [40df1c8c] 	ruby 2.3.0p0 (2015-12-25 revision 53290) [x86_64-linux]
+ DEBUG [40df1c8c] Finished in 0.574 seconds with exit status 0 (successful).
+ DEBUG [b8259268] Running if test ! -d /root/www/server-monitoring/current; then echo "Directory does not exist '/root/www/server-monitoring/current'" 1>&2; false; fi as root@185.116.236.169
+ DEBUG [b8259268] Command: if test ! -d /root/www/server-monitoring/current; then echo "Directory does not exist '/root/www/server-monitoring/current'" 1>&2; false; fi
+ DEBUG [b8259268] Finished in 0.151 seconds with exit status 0 (successful).
+  INFO [bfd8626b] Running /usr/local/rvm/bin/rvm default do bundle exec rackup -p 9210 & as root@185.116.236.169
+ DEBUG [bfd8626b] Command: cd /root/www/server-monitoring/current && /usr/local/rvm/bin/rvm default do bundle exec rackup -p 9210 &
+ DEBUG [bfd8626b] 	Puma starting in single mode...
+ DEBUG [bfd8626b] 	
+ DEBUG [bfd8626b] 	* Version 3.11.0 (ruby 2.3.0-p0), codename: Love Song
+ DEBUG [bfd8626b] 	
+ DEBUG [bfd8626b] 	* Min threads: 0, max threads: 16
+ DEBUG [bfd8626b] 	
+ DEBUG [bfd8626b] 	* Environment: development
+ DEBUG [bfd8626b] 	
+ DEBUG [bfd8626b] 	* Listening on tcp://localhost:9210
+ DEBUG [bfd8626b] 	
+ DEBUG [bfd8626b] 	Use Ctrl-C to stop
+ DEBUG [bfd8626b] 	
