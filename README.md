@@ -6,10 +6,12 @@
 
 You can enable/disable the checks in `config/config.yml` file
 
-Http server runs on port 9210.
+Http server starts and runs on port 9210 after every deploy with Capistrano.
 
-Visit `/status` endpoint to see available metrics in JSON format.
+There is an edpoint `/status` that contains the data in JSON format. To check it, just do `curl http://localhost:9210/status`
 
+Data format:
+```
 {
   "hostname": "<name>",
   "cpu_avg": "<int>%",
@@ -17,3 +19,4 @@ Visit `/status` endpoint to see available metrics in JSON format.
   "mem_usage": "<int>",
   "check_time": "<timestamp YYYY-MM-DD HH:SS>"
 }
+```
