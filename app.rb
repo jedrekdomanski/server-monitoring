@@ -1,6 +1,5 @@
 require 'sinatra'
 require 'json'
-require_relative './lib/stats'
 require_relative './lib/stat'
 
 class App < Sinatra::Base
