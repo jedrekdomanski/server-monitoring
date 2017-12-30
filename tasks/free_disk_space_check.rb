@@ -1,5 +1,4 @@
 require 'net/http'
-require_relative '../lib/stats'
 require_relative '../lib/stat'
 require_relative '../lib/system_checks'
 require 'yaml'
