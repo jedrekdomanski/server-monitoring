@@ -5,16 +5,27 @@ require_relative './lib/stat'
 
 class App < Sinatra::Base
 
+  stat = Stat.new
+  Stat.save(stat)
+
   get '/status' do
-    stats = Stats.all
-    { stats: stats.map(&:to_h) }.to_json
+    { stats: Stat.last.to_h }.to_json
   end
 
   post '/create' do
-    stat = Stat.new(cpu: params[:cpu], disk: params[:disk], ram: params[:ram])
-    Stats.save(stat)
-  
+    puts params
+    stat = Stat.last
+    if params.include?("cpu")
+      stat.cpu = params["cpu"]
+      stat.check_time = params["check_time"]
+    elsif params.include?("disk")
+      stat.disk = params["disk"]
+      stat.check_time = params["check_time"]
+    elsif params.include?("ram")
+      stat.ram = params["ram"]
+      stat.check_time = params["check_time"]
+    end
+    
     status 201
   end
-
 end

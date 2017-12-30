@@ -2841,3 +2841,41 @@ Run `bundle install` first.
  DEBUG [bfd8626b] 	
  DEBUG [bfd8626b] 	Use Ctrl-C to stop
  DEBUG [bfd8626b] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2017-12-10 19:06:51 +0100 cap production deploy:start
+  INFO ---------------------------------------------------------------------------
+ DEBUG [b880595f] Running [ -d ~/.rvm ] as root@185.116.236.169
+ DEBUG [b880595f] Command: [ -d ~/.rvm ]
+ DEBUG [b880595f] Finished in 0.658 seconds with exit status 1 (failed).
+ DEBUG [2c95f5cd] Running [ -d /usr/local/rvm ] as root@185.116.236.169
+ DEBUG [2c95f5cd] Command: [ -d /usr/local/rvm ]
+ DEBUG [2c95f5cd] Finished in 0.158 seconds with exit status 0 (successful).
+ DEBUG [3e74fb77] Running /usr/local/rvm/bin/rvm version as root@185.116.236.169
+ DEBUG [3e74fb77] Command: /usr/local/rvm/bin/rvm version
+ DEBUG [3e74fb77] 	rvm 1.29.3 (master) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [3e74fb77] Finished in 0.641 seconds with exit status 0 (successful).
+ DEBUG [039bfb41] Running /usr/local/rvm/bin/rvm current as root@185.116.236.169
+ DEBUG [039bfb41] Command: /usr/local/rvm/bin/rvm current
+ DEBUG [039bfb41] 	ruby-2.3.0
+ DEBUG [039bfb41] Finished in 0.463 seconds with exit status 0 (successful).
+ DEBUG [785c6666] Running /usr/local/rvm/bin/rvm default do ruby --version as root@185.116.236.169
+ DEBUG [785c6666] Command: /usr/local/rvm/bin/rvm default do ruby --version
+ DEBUG [785c6666] 	ruby 2.3.0p0 (2015-12-25 revision 53290) [x86_64-linux]
+ DEBUG [785c6666] Finished in 0.875 seconds with exit status 0 (successful).
+ DEBUG [aeee74f2] Running if test ! -d /root/www/server-monitoring/current; then echo "Directory does not exist '/root/www/server-monitoring/current'" 1>&2; false; fi as root@185.116.236.169
+ DEBUG [aeee74f2] Command: if test ! -d /root/www/server-monitoring/current; then echo "Directory does not exist '/root/www/server-monitoring/current'" 1>&2; false; fi
+ DEBUG [aeee74f2] Finished in 0.166 seconds with exit status 0 (successful).
+  INFO [c2e2a228] Running /usr/local/rvm/bin/rvm default do bundle exec rackup -p 9210 & as root@185.116.236.169
+ DEBUG [c2e2a228] Command: cd /root/www/server-monitoring/current && /usr/local/rvm/bin/rvm default do bundle exec rackup -p 9210 &
+ DEBUG [c2e2a228] 	Puma starting in single mode...
+ DEBUG [c2e2a228] 	
+ DEBUG [c2e2a228] 	* Version 3.11.0 (ruby 2.3.0-p0), codename: Love Song
+ DEBUG [c2e2a228] 	
+ DEBUG [c2e2a228] 	* Min threads: 0, max threads: 16
+ DEBUG [c2e2a228] 	
+ DEBUG [c2e2a228] 	* Environment: development
+ DEBUG [c2e2a228] 	
+ DEBUG [c2e2a228] 	* Listening on tcp://localhost:9210
+ DEBUG [c2e2a228] 	
+ DEBUG [c2e2a228] 	Use Ctrl-C to stop
+ DEBUG [c2e2a228] 	

@@ -12,5 +12,5 @@ if file["ram"] == :true
   ram = check_free_ram
 
   uri = URI('http://localhost:9210/create')
-  Net::HTTP.post_form(uri, 'ram' => ram)
+  Net::HTTP.post_form(uri, 'ram' => ram, 'check_time' => Time.now.strftime("%Y-%m-%d %H:%M"))
 end

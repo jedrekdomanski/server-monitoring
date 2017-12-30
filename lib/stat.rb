@@ -1,14 +1,15 @@
 class Stat
   attr_accessor :hostname, :cpu, :disk, :ram, :check_time
   
+  @@stat = []
+
   def initialize(attributes = {})
     hostname = `hostname`.strip
-    check_time = Time.now.strftime("%Y-%m-%d %H:%M")
     @hostname = hostname
     @cpu = "#{attributes[:cpu]}%"
     @disk = attributes[:disk]
     @ram = attributes[:ram]
-    @check_time = check_time
+    @check_time = attributes[:check_time]
   end
 
   def to_h
@@ -24,4 +25,13 @@ class Stat
   def to_json
     to_h.to_json
   end
+
+  def self.save(stat)
+    @@stat.push(stat)
+  end
+
+  def self.last
+    @@stat.last
+  end
+
 end

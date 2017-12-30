@@ -3,7 +3,7 @@ def check_avg_cpu_load
 end
 
 def check_free_disk_space
-  "#{`df -m /dev/vda1`.split[10].to_i}MB"
+  "#{`df -m /dev/sda3`.split[11].to_i}MB"
 end
 
 def check_free_ram

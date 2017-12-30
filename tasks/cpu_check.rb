@@ -12,5 +12,5 @@ if file["cpu"] == :true
   avg_cpu_load = check_avg_cpu_load
 
   uri = URI('http://localhost:9210/create')
-  Net::HTTP.post_form(uri, 'cpu' => avg_cpu_load)
+  Net::HTTP.post_form(uri, 'cpu' => avg_cpu_load, 'check_time' => Time.now.strftime("%Y-%m-%d %H:%M"))
 end

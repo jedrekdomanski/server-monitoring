@@ -12,5 +12,5 @@ if file["disk"] == :true
   space = check_free_disk_space
 
   uri = URI('http://localhost:9210/create')
-  Net::HTTP.post_form(uri, 'disk' => space)
+  Net::HTTP.post_form(uri, 'disk' => space, 'check_time' => Time.now.strftime("%Y-%m-%d %H:%M"))
 end
