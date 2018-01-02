@@ -8,7 +8,7 @@ gem 'capistrano-rvm', github: "capistrano/rvm"
 
 group :test do
   gem 'rspec', '3.7.0'
-  gem 'capybara'
+  gem 'rack-test'
 end
 
 

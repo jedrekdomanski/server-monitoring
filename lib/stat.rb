@@ -6,7 +6,7 @@ class Stat
   def initialize(attributes = {})
     hostname = `hostname`.strip
     @hostname = hostname
-    @cpu = "#{attributes[:cpu]}%"
+    @cpu = attributes[:cpu]
     @disk = attributes[:disk]
     @ram = attributes[:ram]
     @check_time = attributes[:check_time]
@@ -21,17 +21,4 @@ class Stat
      check_time: check_time
     }
   end
-
-  def to_json
-    to_h.to_json
-  end
-
-  def self.save(stat)
-    @@stat.push(stat)
-  end
-
-  def self.last
-    @@stat.last
-  end
-
 end
